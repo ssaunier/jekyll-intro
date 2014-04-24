@@ -69,5 +69,57 @@ root page (listing all your articles). You should see a link to your
 new article. Click on it, you should see a blank article. Time to add
 some content with Sublime Text to `posts/YYYY-MM-DD-the-blog-article.markdown`!
 
+## Publish your blog on the Internet
 
+You need to create a new GitHub repository. Go to [github.com/new](https://github.com/new), and create repository named `<your_github_username>.github.io`.
+The name is very important. Once created, you will get instructions to add this
+remote to your local git repository (the two command specified at the bottom).
+
+To publish your article, it's just a push:
+
+```bash
+$ git push origin master
+```
+
+## Using your own domain
+
+You will have to create a `CNAME` file. [Here is a great guide](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages).
+
+## Adding static pages
+
+Suppose you want to have an "About" page or a "Resume" page. These are not really
+blog articles. And you want to have a special URL:
+
+### /about.html
+
+Just create a file at the root of your jekyll project:
+
+```bash
+$ touch about.html
+```
+
+And then, inside this file, don't forget the head:
+
+```markdown
+---
+layout: default
+title: About me
+---
+```
+
+Note that the layout in this case is `default`, not `post`. They are related
+to what you can find in the `_layouts` folder!
+
+### /about
+
+You can drop the `.html` suffix in your URL, in that case you need a folder:
+
+```bash
+$ mkdir about
+$ touch about/index.html
+```
+
+## Adding images
+
+## Adding a contact form
 
