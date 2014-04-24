@@ -3,6 +3,9 @@ hosted on [Github Pages](https://pages.github.com/).
 
 ## Gem installation
 
+You will need a fresh ruby installation. If you don't, follow
+[lewagon/setup](https://github.com/lewagon/setup)
+
 First, make sure you have jekyll installed with:
 
 ```bash
@@ -121,5 +124,26 @@ $ touch about/index.html
 
 ## Adding images
 
+The Markdown syntax to add an image is:
+
+```markdown
+![Alt text](/path/to/img.jpg)
+```
+
+You should create an `images` folder to put your images in:
+
+```bash
+$ mkdir images
+```
+
+This way, if you have an image `me.jpg` in your `images` folder,
+you can put it in your article with the following:
+
+```markdown
+![Me](/images/me.jpg)
+```
+
 ## Adding a contact form
 
+You can use **Wufoo** or **Brace forms**, I wrote [an article](http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html)
+about it.
