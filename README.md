@@ -143,7 +143,16 @@ you can put it in your article with the following:
 ![Me](/images/me.jpg)
 ```
 
-## Adding a contact form
+## I want a contact form!
 
 You can use **Wufoo** or **Brace forms**, I wrote [an article](http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html)
 about it.
+
+## I don't like the default look & feel!
+
+Well, you can tweak the layout, or the CSS. You can also find some inspiration
+on [jekyllthemes.org](http://jekyllthemes.org/)
+
+## I want to put comments on my blog!
+
+Use [Disqus](http://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)!
