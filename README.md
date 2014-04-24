@@ -156,3 +156,31 @@ on [jekyllthemes.org](http://jekyllthemes.org/)
 ## I want to put comments on my blog!
 
 Use [Disqus](http://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)!
+
+## Power stuff
+
+In this section, I will explained stuff that happen automagically with Github Pages.
+
+### Build
+
+Suppose you want to host your Jekyll site old-school, on your own server. You
+will need to upload the site to a FTP server. In that case, you need to **build**
+locally the site, and push this compiled version to the FTP. By default, it
+is built in the `_site` folder. You can read the [doc](http://jekyllrb.com/docs/usage/)
+
+### Liquid
+
+Jekyll is using [Liquid](http://docs.shopify.com/themes/liquid-basics), a templating
+language created by Shopify. That's what you see if you wander in the `_layouts` folder.
+It gives you helpers, `for` loops and `if` conditions.
+You can read the great guide [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) if you want to build your own template.
+
+### Data
+
+You can store [data](http://jekyllrb.com/docs/datafiles/) in your repo, and view it as a static database. It can be useful if you want to create a page listing all your startup employees. Putting the
+employees in a yaml file and using a liquid `{% for %}` loop will help you create a greate page!
+
+I wrote [an article](http://sebastien.saunier.me/blog/2013/10/04/why-you-should-learn-jekyll-today.html)
+about this approach
+
+
